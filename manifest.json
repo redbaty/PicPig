@@ -1,0 +1,18 @@
+{
+    "name": "PicPig",
+    "description": "Transforme seus colegas de trabalho em porcos capitalistas.",
+    "version": "1.0",
+    "manifest_version": 3,
+    "content_scripts": [
+      {
+        "matches": ["https://meet.google.com/*"],
+        "js": ["meet.js"]
+      }
+    ],
+    "web_accessible_resources": [
+      {
+        "resources": ["porquinhos/*.jpg", "porquinhos/*.png"],
+        "matches": ["https://meet.google.com/*"]
+      }
+    ]
+  }
